@@ -40,7 +40,7 @@ target_include_directories(vault PRIVATE src)
 target_link_libraries(vault PRIVATE nlohmann_json::nlohmann_json)
 
 install(TARGETS vault
-  LIBRARY DESTINATION ${CMAKE_INSTALL_DIR}
+  LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 
